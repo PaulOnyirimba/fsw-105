@@ -40,6 +40,11 @@ if(30 >= 18){
 if(4 < 18){
     console.log("Suzy is not old enough to see Mad Max Fury Road, dont let her in")
 }
-for(var i = 0; i < 100; i++){
-    console.log(i)
+for(var i = 0; i <= 100; i++){
+    if(i % 2 == 0) {
+        console.log("the number is even")
+    }
+    else {
+        console.log("the number is odd")
+    }
 }
