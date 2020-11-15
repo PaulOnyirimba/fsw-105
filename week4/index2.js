@@ -19,8 +19,16 @@ console.log(vegetables.length)
 vegetables.push("3")
 console.log(vegetables)
 
-var fruit = ["apple", "orange", "watermelon", "1"]
-var vegetables = ["carrot", "tomato", "pepper", "3"]
+// var fruit = ["apple", "orange", "watermelon", "1"]
+// var vegetables = ["carrot", "tomato", "pepper", "3"]
 var food = fruit.concat(vegetables)
 console.log(food)
 
+food.splice(4, 2)
+console.log(food)
+
+food.reverse()
+console.log(food)
+
+ var change = food.toString()
+console.log(change)

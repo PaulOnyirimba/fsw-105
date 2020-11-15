@@ -2,7 +2,7 @@ var readlineSync = require('readline-sync');
 
 var firstNumber = readlineSync.questionInt("Please enter your first number: ")
 var secondNumber = readlineSync.questionInt("Please enter your second number: ")
-var userOperation = readlineSync.questionInt("Please enter the operation to perform: add, sub, mul, div: ");
+var userOperation = readlineSync.question("Please enter the operation to perform: add, sub, mul, div: ");
 
 function addTwoNumber(num1, num2){
     var addedNumbers = num1 + num2;
