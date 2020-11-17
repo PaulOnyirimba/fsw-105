@@ -12,7 +12,11 @@ if (userOperation == "add"){
     console.log(addTwoNumber(firstNumber, secondNumber));
 }
 else if (userOperation == "sub"){
-
+function subtractTwoNumbers(num1, num2){
+    var subNumbers = num1 + num2;
+    return "Subtracting Number1: " + num1 + "with Number2: " + num2 + "results in: " + subNumbers;
+    console.log(subtractTwoNumbers(firstNumber, secondNumber));
+}
 }
 else if (userOperation == "mul"){
 
