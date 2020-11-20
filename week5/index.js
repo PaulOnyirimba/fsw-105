@@ -1,5 +1,8 @@
 // return a new array that has only the numbers that are 5 or greater.
-
+var fiveAndGreaterOnly = [3, 6, 8, 2]
+var result = fiveAndGreaterOnly.filter(num => num > 5)
+console.log(result)
+    
 // return array that only includes even numbers
 var arr = [3, 6, 8, 2]
 var result = arr.filter(num => num % 2 === 0)
@@ -11,9 +14,9 @@ var result = doubledNumbers.map(num => num*2)
 console.log(result)
 
 // Take an array of numbers and make them strings
-// var stringItUp = [2, 5, 100]
-// var result = stringitUp.from(stringItUp.join(''))
-// console.log(result)
+var stringItUp = [2, 5, 100]
+var result = stringItUp.toString()
+console.log(result)
 
 // capitalize each of an array of names
 var capitalizeNames = ["John", "Jacob", "Jingleheimer", "Schmidt"]
@@ -28,23 +31,29 @@ return final
 })
 console.log(result)
 
-// // Turn an array of numbers into a long string of all those numbers.
-// var stringConcat = [1, 2, 3]
-// var result = stringConcat.reduce
+// Turn an array of numbers into a long string of all those numbers.
+var stringConcat = [1, 2, 3]
+var result = stringConcat.toString()
+var removeComma = result.replace(/,/g, "");
+console.log(removeComma)
 
 // Turn an array of voter objects into a count of how many people voted
-// var totalVotes = [
-// {name: 'Bob' , age: 30, voted: true}
-// {name: 'Jake' , age: 32, voted: true}
-// {name: 'Kate' , age: 25, voted: false}
-// {}
-// {}
-// {}
-// {}
-// {}
-// {}
-// {}
-// ]
+var totalVotes = [
+{name: 'Bob' , age: 30, voted: true},
+{name: 'Jake' , age: 32, voted: true},
+{name: 'Kate' , age: 25, voted: false},
+{name: 'Sam' , age: 20, voted: false},
+{name: 'Phil' , age: 21, voted: true},
+{name: 'Ed' , age: 55, voted: true},
+{name: 'Tami' , age: 54, voted: true},
+{name: 'Mary' , age: 31, voted: false},
+{name: 'Becky' , age: 43, voted: false},
+{name: 'Joey' , age: 41, voted: true},
+{name: 'Jeff' , age: 30, voted: true},
+{name: 'Zack' , age: 19, voted: false}
+];
+var result = totalVotes.filter(x=>x.voted).length
+console.log(result)
 
 // Sort an array from smallest number to largest
 var leastToGreatest = [1, 3, 5, 2, 90, 20]
